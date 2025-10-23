@@ -1,7 +1,51 @@
 <h4>Angular directives are instructions in the DOM that tell Angular to attach a specific behavior to a DOM element or to transform the DOM element itself. There are three main types of directives in Angular:</h4>
     
     <ul>
-        <li><b>Components:</b> These are directives with a template. They define a view, which is a set of screen elements that Angular can choose among and modify according to your program logic and data.</li>
+        <li><b>Components:</b> These are directives with a <b>template</b>. They define a view, which is a set of screen elements that Angular can choose among and modify according to your program logic and data. In Angular, all components are <i>technically directives</i>, but they are a special type with a <i>template</i>. While components create reusable UI elements with their own view, other directives are used to modify the appearance, behavior, or structure of existing elements.</li>
         <li><b>Structural Directives:</b> These directives change the structure of the DOM by adding or removing elements. Examples include *ngIf, *ngFor, and *ngSwitch.</li>
         <li><b>Attribute Directives:</b> These directives change the appearance or behavior of an element, component, or another directive. Examples include ngClass, ngStyle, and custom attribute directives.</li>
     </ul>
+
+<p>A few examples of other directives</p>
+
+<table border="1" cellspacing="0" cellpadding="6">
+  <thead>
+    <tr>
+      <th>Directive / Block</th>
+      <th>Purpose</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>*ngIf</code> / <code>&#64;if</code></td>
+      <td>Conditional rendering</td>
+      <td>Show element if condition true</td>
+    </tr>
+    <tr>
+      <td><code>*ngFor</code> / <code>&#64;for</code></td>
+      <td>Looping over arrays</td>
+      <td>List rendering</td>
+    </tr>
+    <tr>
+      <td><code>[ngClass]</code></td>
+      <td>Dynamic CSS class binding</td>
+      <td>Change class based on variable</td>
+    </tr>
+    <tr>
+      <td><code>[ngStyle]</code></td>
+      <td>Dynamic inline style binding</td>
+      <td>Change style dynamically</td>
+    </tr>
+    <tr>
+      <td><code>ngSwitch</code></td>
+      <td>Multi-branch rendering</td>
+      <td>Replace multiple <code>*ngIf</code> blocks</td>
+    </tr>
+    <tr>
+      <td><code>ngTemplateOutlet</code></td>
+      <td>Template reuse</td>
+      <td>Dynamic templates</td>
+    </tr>
+  </tbody>
+</table>
